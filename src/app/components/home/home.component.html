@@ -1,0 +1,27 @@
+<h1>Seja bem vindo ao curso de Angular!</h1>
+
+<h4 class="text-danger">{{ anuncio }}</h4>
+
+<div class="row">
+  <div class="col">
+    <app-card-produto
+      [foto]="foto"
+      [nomeProduto]="nomeProduto"
+      [promocao]="promocao"
+      [idProduto]="idProduto"
+      [dataValidade]="dataValidade"
+      [precoProduto]="precoProduto"
+    ></app-card-produto>
+  </div>
+
+  <div class="col">
+    <app-card-produto
+      foto="https://noticiasdotimao.com.br/wp-content/uploads/2023/08/Corinthians-Timao-Brabas-Paty.jpg"
+      nomeProduto="Corinthians"
+      [promocao]="false"
+      [idProduto]="633"
+      dataValidade="2099-12-31"
+      [precoProduto]="1000000000.00"
+    ></app-card-produto>
+  </div>
+</div>
